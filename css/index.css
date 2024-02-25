@@ -1,0 +1,529 @@
+@font-face {
+    font-family: "MONTSERRAT";
+    src: url('/fonts/Montserrat-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: "PLAYFAIR";
+    src: url('/fonts/PlayfairDisplay-Regular.ttf')
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #282C34;
+}
+
+.boton {
+    position: absolute;
+    display: none;
+}
+
+.inicio {
+    width: 100%;
+}
+
+.inicioIzq {
+    background-color: #6CA0DC;
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.navegador {
+    background-color: #F0F8FF;
+    height: 100px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.navegador .textoNavegador {
+    margin-left: 30px;
+}
+
+.textoNavegador {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-decoration: none;
+    color: black;
+    
+}
+
+.textoCV {
+    color: black;
+    text-decoration: none;
+}
+
+.título {
+    font-size: 75px;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    font-family: PLAYFAIR;
+}
+
+.texto {
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 10%;
+    font-family: MONTSERRAT;
+}
+
+.cv {
+    background-color: #F0F8FF;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20%;
+    font-family: MONTSERRAT;
+}
+
+.linkedln, .github {
+    background-color: #F0F8FF;
+    border-radius: 0px 25px 25px 0px;
+    height: 50px;
+    width: 300px;
+    font-size: 32px;
+    position: relative;
+    font-family: MONTSERRAT;
+}
+
+.foto {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding-left: 10px;
+}
+
+.linkedln {
+    margin-bottom: 10px;
+}
+
+.linkedln .textoNavegador, .github .textoNavegador{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding-left: 50px;
+}
+
+.fotoInicio {
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.lista{
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    margin:0;
+    display: inline-block;
+    font-family: PLAYFAIR;
+}
+
+.lista li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+.lista li a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropbtn {
+    display: none;
+    position: absolute;
+}
+
+.sobreMi{
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding-bottom: 2%;
+}
+
+.titulo2 {
+    font-size: 75px;
+    text-align: center;
+    font-family: PLAYFAIR; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.texto2 {
+    font-size: 32px;
+    color: white;
+    font-family: MONTSERRAT;
+    width: 45%;
+    margin-left: 5%;
+   
+}
+
+.contenedor-imagen{
+    width: 50%; 
+}
+
+.imagenSobreMi {
+    width: 500px;
+    max-width: 50%;
+    padding-left: 25%;
+    position: relative;
+}
+
+
+.etapa{
+    width: 90%;
+    padding-bottom: 5%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: MONTSERRAT;
+}
+
+.grado{
+    font-size: 32px;
+    color: #6CA0DC;
+    padding-bottom: 1%;
+}
+
+.lugar {
+   color: white;
+   font-size: 20px; 
+}
+
+.fecha {
+    float: right;
+    font-size: 32px;
+    color: white;
+}
+
+.formulario {
+    margin: 10px auto;
+    padding: 30px;
+    background:#6CA0DC ;
+    font-size: 14px;
+    font-family: MONTSERRAT;
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.textoContacto {
+    font-size: 20px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    padding: 13px 0;
+    font-size: 32px;
+}
+
+input {
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+}
+
+textarea {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+.proyectoCont {
+    display: grid;
+    grid-gap: 100px;
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.proyecto{
+    background-color: #6CA0DC;
+    padding: 25px;
+}
+
+.fotoProyecto {
+    width: 100%;
+}
+
+.info {
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.info .texto2 {
+    width: 100%;
+    margin:0;
+    padding-left: 5%;
+}
+
+.proyecto .texto2 {
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.enlace {
+    margin-top: 10%;
+    background-color: #F0F8FF;
+    display: flex;
+    width: 25%;
+    height: 50px;
+    align-items: center;
+}
+
+.enlace p{
+    font-size: 20px;
+}
+
+.fotoEnlace {
+    width: 25px;
+    height: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.fotoHabilidad {
+    width: 50px;
+    height: auto;
+    padding-right: 10%;
+}
+
+.tecnologias {
+    float: right;
+    padding-right: 10%;
+    width:  25%;
+}
+
+@media (max-width: 1200px){
+    .inicioIzq {
+        background-color: #6CA0DC;
+        width: 100%;
+        height: 10%;
+    }
+
+    .fotoInicio {
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .título {
+        font-size: 48px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .texto {
+        font-size: 24px;
+    }
+
+    .textoNavegador {
+        font-size: 24px;
+    }
+
+    .textoCV {
+        font-size: 24px;
+    }
+
+    .navegador {
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .lista li{
+        padding: 10px 5px;
+    }
+
+    .dropbtn {
+        position: relative;
+        display: flex;
+        left:8%;
+        background-color: #F0F8FF;
+        border: none;
+        cursor: pointer;
+        
+      }
+      
+      .navegador {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+      
+      .lista {
+        display: none;
+        position: absolute;
+        background-color: #F0F8FF;
+        min-width: 100px;
+        z-index: 1;
+        width: 10%;
+      }
+      
+      .lista li {
+        list-style-type: none;
+      }
+      
+      .lista a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .lista a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .fotoMenu{
+        width: 25px;
+        height: 25px;
+        padding-top: 12px;
+      }
+
+      .sobreMi{
+        display: block;
+    }
+
+      .titulo2 {
+        font-size: 48px;
+    }
+
+    .texto2 {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        width: 75%;
+        padding-left: 15%;
+    }
+
+    .contenedor-imagen{
+        width: 100%;
+    }
+
+    .imagenSobreMi {
+        padding: 0;
+        padding-top: 15%;
+        width: 300px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .etapa {
+        text-align: center;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+
+    .grado {
+        font-size: 24px;
+        padding-bottom: 10%;
+    }
+
+    .lugar{
+        font-size: 16px;
+        padding-bottom: 10%;
+    }
+
+    .fecha{
+        font-size: 20px;
+        float: none;
+    }
+
+    .formulario {
+        margin: 5px auto;
+        padding: 15px;
+        font-size: 20px;
+    }
+   
+    label {
+        font-size: 20px;
+
+    }
+    
+    input { 
+        height: 30px;
+        font-size: 20px;
+    }
+
+    textarea {
+        height: 100px;
+        font-size: 20px;
+    }
+
+    .textoContacto {
+        font-size: 14px;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .proyectoCont {
+        grid-gap: 50px;
+    }
+
+    .enlace {
+        width: 50%;
+        height: 30px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .enlace p{
+        font-size: 14px;
+    }
+    
+    .fotoEnlace {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tecnologias{
+        float: none;
+        width: 100%;
+    }
+
+    .fotoHabilidad{
+        width: 30px;
+    }
+}
+
+@media (min-width: 1200px){
+    .proyectoCont{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
