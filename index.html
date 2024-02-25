@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Portfolio </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+</head>
+<body>
+    <div class = "inicio" id = "INICIO">
+        <img src = "img/fotoInicio.jpg" class = "fotoInicio">
+        <div class = "inicioIzq">
+            <div class = "título"> JORGE MORENO </div>
+            <div class = "texto"> Soy un apasionado estudiante<br> de <strong>Desarrollo</strong> de <strong>Aplicaciones<br> Multiplataforma</strong>.</div>
+            <div class = "cv"> 
+                <a class = "textoCV" href="pdf/CV_JorgeMoreno.pdf" download="CV_JorgeMoreno"> Descarga mi CV</a>
+            </div>
+            <div class = "linkedln">
+                <img src = "img/linkedl.png" class = "foto">
+                <a class = "textoNavegador" href="https://www.linkedin.com/in/jorge-ignacio-moreno-sastre-3a035a2b0/" target="_blank">Linkedln</a>
+            </div>
+            <div class = "github">
+                <img src = "img/github.png" class = "foto">
+                <a class = "textoNavegador" href="https://github.com/jorgemorenosastre" target="_blank">Github</a>
+            </div> 
+        </div>   
+    </div>
+
+    <div class = "navegador">
+        <button onclick="toggleDropdown()" class="dropbtn"><img src ="img/menu.png" class = fotoMenu></button>
+            <ul id = "myDropdown" class = "lista">
+                <li><a href = "#INICIO">Inicio</a></li>
+                <li><a href = "#PROYECTOS">Proyectos</a></li>
+                <li><a href = "#SOBRE_MI">Sobre mí</a></li>
+                <li><a href = "#HABILIDADES">Habilidades</a></li>
+                <li><a href = "#EDUCACION">Educación</a></li>
+                <li><a href = "#CONTACTO">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = proyectos id = "PROYECTOS">
+        <div class = "titulo2"> PROYECTOS </div>
+        <div class = "proyectoCont">
+            <div class = "proyecto">
+                <img src="img/ucla.png" class = "fotoProyecto">
+                <div class = "info">
+                    <div class = "texto2"> <strong>Landing page</strong> baloncesto.<br> Uso de html y css</div>
+                    <div class = "enlace">
+                        <img src = "img/github.png" class = "fotoEnlace">
+                        <a class = "texto2" href="https://github.com/jorgemorenosastre/LANDING_PAGE_UCLA" target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "proyecto">
+                <img src="img/portfolio.png" class = "fotoProyecto">
+                <div class = "info">
+                    <div class = "texto2"> Mi <strong>portfolio web</strong>.<br>Uso de html , css y javascript</div>
+                    <div class = "enlace">
+                        <img src = "img/github.png" class = "fotoEnlace">
+                        <a class = "texto2" href="https://github.com/jorgemorenosastre/LANDING_PAGE_UCLA" target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "titulo2"id = "SOBRE_MI"> SOBRE MÍ </div>
+    <div class = "sobreMi">
+        <div class = "texto2">Hola, soy Jorge Moreno y quiero seguir formándome como desarrollador de aplicaciones.<br><br>
+            Actualmente, estudio en el Centro San Valero y formo parte del equipo de preparación para el concurso Programame de 2024. Además,
+            participaré en la AWS Jam 2024 con otros cuatro compañeros del curso.<br><br>           
+            Aparte mis aficiones son viajar, jugar a videojuegos y me encanta jugar a baloncesto. 
+            Este año participé en la fase final del Campeonato Grupo San Valero con tres compañeros del curso. 
+        </div>
+
+        <div class = "contenedor-imagen">
+            <img src = "img/imagen_sobreMi_2.jpg" class = "imagenSobreMi" id = "basket">  
+        </div>   
+    </div>
+
+
+    <div class = "habilidades" id = "HABILIDADES">
+        <div class = "titulo2">HABILIDADES</div>
+        <div class = "etapa">
+            <div class = "grado"><b>Front End</b></div>
+            <div class = "lugar">Html, Css, Javascript y Typescript.</div>
+            <div class = "tecnologias">
+                <img src = "img/html.png" class = "fotoHabilidad">
+                <img src = "img/css.png" class = "fotoHabilidad">
+                <img src = "img/js.png" class = "fotoHabilidad">
+                <img src = "img/ts.png" class = "fotoHabilidad">
+            </div>
+        </div>
+
+        <div class = "etapa">
+            <div class = "grado"><b>Back End</b></div>
+            <div class = "lugar">Patrones, Onion Architecture y códigdo limpio.</div>
+            <div class = "tecnologias">
+                <img src = "img/java.png" class = "fotoHabilidad">
+                <img src = "img/c.png" class = "fotoHabilidad">
+            </div>
+        </div>
+
+        <div class = "etapa">
+            <div class = "grado"><b>Base de Datos</b></div>
+            <div class = "lugar">SQL y conexion a una base de datos RDS de AWS con Java.</div>
+            <div class = "tecnologias">
+                <img src = "img/sql.png" class = "fotoHabilidad">
+                <img src = "img/rds.svg" class = "fotoHabilidad">
+            </div>
+        </div>
+    </div>
+
+    <div class = "educación" id = "EDUCACION">
+        <div class = "titulo2">EDUCACIÓN</div>
+        <div class = "etapa">
+            <div class = "grado"><b>Bachillerato Científico</b></div>
+            <div class = "lugar">Colegio Santa María del Pilar (Marianistas)</div>
+            <div class = "fecha">2019 - 2021</div>
+        </div>
+
+        <div class = "etapa">
+            <div class = "grado"><b>Ingeniería Informática</b></div>
+            <div class = "lugar">Universidad de Zaragoza</div>
+            <div class = "fecha">2021 - 2023</div>
+        </div>
+
+        <div class = "etapa">
+            <div class = "grado"><b>Desarrollo de Aplicaciones Multiplataforma</b></div>
+            <div class = "lugar">Centro San Valero</div>
+            <div class = "fecha">2023 - 2025</div>
+        </div>
+    </div>
+
+    <div class = "contacto" id = "CONTACTO">
+        <div class = "titulo2">CONTACTO</div>
+        <div class = "formulario">
+            <div class  = "textoContacto">
+                Tlf: 611 458 041 <br>
+                jorgezgz16@gmail.com <br>
+                Zaragoza, España <br>
+            </div>
+            <form action="https://formsubmit.co/jorgezgz16@gmail.com" method="POST">
+                <label for = "Nombre">Nombre</label>
+                <input type = "text" name = "name">
+
+                <label for = "email">Correo Electrónico</label>
+                <input type = "email" name = "email">
+
+                <label for = "subject">Asunto</label>
+                <input type = "text" name = "subject">
+
+                <label for = "comments">Mensaje</label>
+                <textarea type = "text" name = "comments"></textarea>
+
+                <input type = "submit" value = "Enviar">
+
+                <input type="hidden" name="_next" value="https://miportfoliojorgemoreno.s3.amazonaws.com/index.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </div>
+<script src='js/index.js'></script>
+</body>
+</html>
